@@ -40,6 +40,9 @@ return require('packer').startup({
       rtp = 'editor-support/vim'
     }
 
+    -- This implements editing of encrypted files: .gpg, .pgp or .asc suffix
+    use 'jamessan/vim-gnupg'
+
     -- This is NVim LSP Configuration support
     use 'neovim/nvim-lspconfig'
 
@@ -48,6 +51,9 @@ return require('packer').startup({
 
     -- This is LSP Source for NVim Autocompletion
     use 'hrsh7th/cmp-nvim-lsp'
+
+    -- This is Buffer Source for NVim Autocompletion
+    use 'hrsh7th/cmp-buffer'
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins

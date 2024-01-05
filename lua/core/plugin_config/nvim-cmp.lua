@@ -8,7 +8,9 @@ cmp.setup {
   mapping = cmp.mapping.preset.insert(),
 
   -- This table names the sources for autocompletion
-  sources = {
+  sources = cmp.config.sources({
     { name = 'nvim_lsp' },
-  },
+  }, {
+    { name = 'buffer' },
+  })
 }
