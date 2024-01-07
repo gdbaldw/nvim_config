@@ -55,6 +55,9 @@ return require('packer').startup({
     -- This is Buffer Source for NVim Autocompletion
     use 'hrsh7th/cmp-buffer'
 
+    -- This is Python Autocompletion support
+    use 'davidhalter/jedi-vim'
+
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if packer_bootstrap then
